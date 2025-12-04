@@ -12,7 +12,7 @@ resource "aws_wafv2_web_acl" "this" {
     metric_name                = "${var.environment}-waf"
     sampled_requests_enabled   = true
   }
-
+   //Applied the WAF XSS rule in the terraform code itself //  
   rule {
     name     = "BlockXSS"
     priority = 1
