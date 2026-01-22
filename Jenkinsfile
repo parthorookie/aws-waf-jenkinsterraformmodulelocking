@@ -16,7 +16,7 @@
         stage('Checkout Source Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/parthorookie/terraformmoduleaws-jenkins-s3-native-locking'
+                    url: 'https://github.com/parthorookie/aws-waf-jenkinsterraformmodulelocking.git'
             }
         }
 
